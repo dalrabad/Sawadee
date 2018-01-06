@@ -1,7 +1,7 @@
 class Api::ItemsController < ApplicationController
   def create
     item = current_user.scores.new(item_params)
-    if item.save:
+    if item.save
       render json: item
     else
       render json: {message: "Error"}, status: 422
@@ -9,7 +9,7 @@ class Api::ItemsController < ApplicationController
   end
 
   def index
-    @items = Item.all
+    render json: Item.where(menu_id: params[:menu_id])
   end 
 
   def update
