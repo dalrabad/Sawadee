@@ -9,6 +9,10 @@ import ProtectedRoute from './ProtectedRoute';
 import AuthRoute from './AuthRoute';
 import FetchUser from './FetchUser';
 import { Switch, Route } from 'react-router-dom';
+import Footer from './Footer';
+import AboutUs from './AboutUs';
+import ThaiFood101 from './ThaiFood101';
+import Menus from './Menus'
 
 class App extends Component {
   render() {
@@ -19,11 +23,15 @@ class App extends Component {
         <FetchUser>
           <Switch>
             <Route exact path='/' component={Home} />
+            <Route exact path='/aboutus' component={AboutUs} />
+            <Route exact path='/thaifood101' component={ThaiFood101} />
+            <Route exact path='/menus' component={Menus} />
             <AuthRoute exact path='/login' component={Login} />
             <AuthRoute exact path='/register' component={Register} />
             <Route component={NoMatch} />
           </Switch>
         </FetchUser>
+        <Footer />
       </div>
     );
   }
