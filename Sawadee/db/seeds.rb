@@ -5,3 +5,6 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+Item.create(name: "Satay", description: "Marinated strips of the tender meat fillet, BBQ grilled and served with Thai peanut sauce, and cucumber sauce.", price: "8.95", category: "appetizer")
+Item.create(name: "", description: "", price: "", category: "")
