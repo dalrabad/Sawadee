@@ -17,7 +17,7 @@ class Api::ItemsController < ApplicationController
     if item.update(item_params)
       render json: item
     else 
-      render json: {message: "not update"}, status: 422
+      render json: {message: "Not updated"}, status: 422
     end
 
   end
