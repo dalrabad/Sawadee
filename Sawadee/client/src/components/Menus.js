@@ -4,7 +4,7 @@ import MenuDetails from './MenuDetails';
 
 const Menus = () => {
     return(
-        <div>
+        <div className="menus">
             <div>
                 <MenuList />
             </div>

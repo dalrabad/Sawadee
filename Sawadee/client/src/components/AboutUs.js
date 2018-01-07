@@ -5,7 +5,7 @@ import about from '../images/about.jpeg';
 const AboutUs = () => {
     return (
     <div>
-        <div class="ui grid"> 
+        <div class="about ui grid"> 
             <div class="three column row">
                 <div class="column">
                     <Image src={about} fluid />

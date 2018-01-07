@@ -16,7 +16,7 @@ class menuDetails extends Component {
 
   render() {
     return (
-      <div>
+      <div className="menuDetails" >
        { this.props.items.map( item => (
            <MenuItem 
             id = {item.id}

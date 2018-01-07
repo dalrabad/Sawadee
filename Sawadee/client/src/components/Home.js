@@ -8,10 +8,9 @@ class Home extends Component {
   render() {
     return (
       <div>
+        <h1 className="title">Sawadee Thai</h1>
         <div className='container jumbotron'>
-          <Header as='h1' textAlign='center' style={{zIndex: 1}}>Sawadee Thai</Header>
-          {/* <Image src={thailand} fluid /> */}
-          <Image src={food} fluid />
+          <Image className="image" src={food} fluid />
         </div>
         <div>
           <Header as='h2' textAlign='center' className='invite'>Sawadee invites you to her beautiful, new restaurant in downtown Salt Lake City for authentic Thai cuisine.</Header>

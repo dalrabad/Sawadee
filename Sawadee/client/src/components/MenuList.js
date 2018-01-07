@@ -10,10 +10,10 @@ class menuList extends Component {
 
   render() {
     return (
-      <div>
+      <div className="menuList">
        { this.props.menus.map( menu => (
            <ul>
-             <button onClick={()=> this.props.dispatch(changeMenu(menu.id))}> {menu.name} </button>
+             <li className="menuItem" onClick={()=> this.props.dispatch(changeMenu(menu.id))}> {menu.name} </li>
             </ul>
        ))}
       </div>

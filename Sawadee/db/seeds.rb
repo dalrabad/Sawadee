@@ -1,10 +1,28 @@
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the rails db:seed command (or created alongside the database with db:setup).
-#
-# Examples:
-#
-#   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
-#   Character.create(name: 'Luke', movie: movies.first)
-
-Item.create(name: "Satay", description: "Marinated strips of the tender meat fillet, BBQ grilled and served with Thai peanut sauce, and cucumber sauce.", price: "8.95", category: "appetizer")
-Item.create(name: "", description: "", price: "", category: "")
+Item.create(name: "Satay (Grilled Chicken or Beef Skewers", description: "Marinated strips of the tender chicken or Beef fillet, barbecue grilled and served with our own special peanut sauce, and cucumber sauce.", price: 8.95, category: "appetizer", size: "4 pieces", menu_id: 2)
+Item.create(name: "Deep Fried Tofu (Tofu Tawt)", description: "Deep-fried fresh Bean Cake served with cucumber sauce with ground peanut.", price: 7.95, category: "appetizer", size: "18 pieces", menu_id: 2)
+Item.create(name: "Tempura Vegetables", description: "Vegetables deep-fried with tempura. Served with a special Sweet and Sour Sauce.", price: 8.95, category: "appetizer", menu_id: 2)
+Item.create(name: "Fresh spring rolls (Po Pia Sod)", description: "Vegetables (mint, carrot, lettuce), tofu, Rice noodles, in fresh spring roll skin. Served with Thai peanut sauce.", price: 7.95, category: "appetizer", size: "2 rolls, cut to 4 pieces", menu_id: 2)
+Item.create(name: "Crispy spring rolls (Po Pia Tawt)", description: "Vegetables (cabbage, carrot), Glass noodles, in spring roll skin. Served with sweet and sour sauce.", price: 7.95, category: "appetizer", size: "6 pieces", menu_id: 2)
+Item.create(name: "Papaya Salad (Som Tum)", description: "Shredded green papaya, Limejuice, tomatoes, ground peanuts, garlic, a shrimp, green beans and fish sauce. Served with Sticky Rice and Fresh Lettuce.", price: 11.95, category: "thai salads", menu_id: 2)
+Item.create(name: "Lettuce Wraps (Larb)", description: "Chopped meat with onion, Thai chilies, cilantro, Toasted rice powder, limejuice, and mint leaf. Served with Sticky Rice and Fresh Lettuce.", price: 12.95, category: "thai salads", menu_id: 2)
+Item.create(name: "Shrimp Salad (Yum Goong)", description: "Shrimp with limejuice, Thai chili, onions, cilantro, tomato, cucumber, and mint leaf. Served with Sticky Rice and Fresh lettuce.", price: 14.95, category: "thai salads", menu_id: 2)
+Item.create(name: "Hot and Sour Shrimp Soup (Tom Yum Goong)", description: "Shrimp soup flavored with lemon grass, cilantro, fresh chilies, galangal, mushroom, lime leaves and lime juice.", price: 14.95, category: "thai soups", menu_id: 2)
+Item.create(name: "Coconut Soup (Tom Kha Gai)", description: "Coconut soup with chicken, flavored with kaffir lime leaf, lemon grass, galangal, mushrooms, green onion, and cilantro.", price: 13.95, category: "thai soups", menu_id: 2)
+Item.create(name: "Pad Thai", description: "Thin Rice noodles stir-fried with shrimp and chicken, green onion, bean spout, egg, Pad Thai sauce with ground peanuts on the side.", price: 13.95, category: "thai noodles", menu_id: 2)
+Item.create(name: "Drunken Noodles (Guay Teaw Pad Kee Mao)", description: "Fresh wide rice noodles stir fried meat with fresh Thai chili, garlic, mushroom, tomato, baby corn, and Thai basil in oyster sauce.", price: 13.95, category: "thai noodles", menu_id: 2)
+Item.create(name: "Red Curry", description: "Red curry of your choice (chicken, beef or pork) with coconut milk, bell pepper, bamboo shoots, zucchini, and Thai basil.", price: 14.50, category: "thai curry", menu_id: 2)
+Item.create(name: "Yellow Curry", description: "Yellow curry of your choice (chicken, beef or pork) with coconut milk, carrots, and potatoes.", price: 14.50, category: "thai curry", menu_id: 2)
+Item.create(name: "Green Curry", description: "Green curry of your choice (chicken, beef or pork) with coconut milk, bell pepper, bamboo shoots, zucchini, and Thai basil.", price: 14.50, category: "thai curry", menu_id: 2)
+Item.create(name: "Massaman Curry", description: "Massaman curry of your choice (chicken, beef or pork) with coconut milk, potatoes, carrots, and roasted peanuts.", price: 14.50, category: "thai curry", menu_id: 2)
+Item.create(name: "Vegetarian Coconut Soup (Tom Kha Puck)", description: "Coconut soup with vegetable, deep fried tofu kaffir lime leaf, lemon grass, galangal, mushrooms, green onion, and cilantro.", price: 5.95, category: "thai soups", menu_id: 3)
+Item.create(name: "Pad Thai Tofu", description: "Thin Rice noodles stir-fried with deep fried Tofu, green onion, bean spout, Pad Thai sauce. Topped with ground peanuts.", price: 12.95, category: "thai noodles", menu_id: 3)
+Item.create(name: "Thai Red Curry Tofu", description: "Red curry with Deep-fried tofu, coconut milk, bell pepper, bamboo shoots, green pea, zucchini, Thai basil. Thai Yellow Curry Tofu.", price: 13.50, category: "thai curry", menu_id: 3)
+Item.create(name: "Fried Tofu (Tofu Tawt)", description: "Deep-fried fresh Bean Cake served with sweet and sour and cucumber sauces with ground peanut.", price: 7.95, category: "appetizer", size: "18 pieces", menu_id: 3)
+Item.create(name: "Fresh Thai spring rolls (Po Pia Sod)", description: "Vegetables(mint, carrot, lettuce), Tofu, Rice noodles, in fresh spring roll skin. Served with Thai peanut sauce.", price: 7.95, category: "appetizer", size: "2 rolls", menu_id: 3)
+Item.create(name: "Crispy Thai spring rolls (Po Pia Tawt)", description: "Vegetables, Glass noodles, in spring roll skin. Served with sweet and sour sauce.", price: 7.95, category: "appetizer", size: "6 pieces", menu_id: 3)
+Item.create(name: "Tempura Vegetables", description: "Vegetables deep-fried with tempura. Served with a special Sweet and Sour Sauce.", price: 8.95, category: "appetizer", menu_id: 3)
+Item.create(name: "Fresh Mangoes with Thai sweet sticky rice", price: 7.95, category: "dessert", menu_id: 2)
+Item.create(name: "Thai custard with Thai sweet sticky rice", price: 7.95, category: "dessert", menu_id: 2)
+Item.create(name: "Monsoon Valley Pokdum (Red Wine)", description: "Ruby robe with bright and clean red fruit aromas. Violet and spices on the palate supported by subtle oak. This wine is medium-bodied with a round and velvety finish. ( 60% Pokdum, 30% Shiraz, and 10% Muscat D Hambourg. )", category: "thai wine", menu_id: 4)
+Item.create(name: "Monsoon Valley Rosé (White Wine)", description: "Pink (onion skin) with an orange tinge. On the nose it displays red fruit aromas. The palate offers watermelon flavor mixed with exotic fruits (mango, kiwi). This light-bodied wine is crisp, fresh with a delicate finish. ( 20% Pokdum, 64% Malaga Blanc, and 16% Columbard. )", category: "thai wine", menu_id: 4)
+Item.create(name: "Castle Creek Chardonnay", description: "Medium gold color with a subtle light fruit and flower bouquet. The medium", category: "Utah wine", menu_id: 4)

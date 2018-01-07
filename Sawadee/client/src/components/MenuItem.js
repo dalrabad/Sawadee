@@ -3,7 +3,7 @@ import { addItem } from '../actions/cartItems';
 
 const MenuItem = ({id, name, description, price, category, size, dispatch}) => {
   return (
-    <div>
+    <div className="menuItem">
       <h3>{name}</h3>
       <h5>{size}</h5>
       <p>{description}</p>
